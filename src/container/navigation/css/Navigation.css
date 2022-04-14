@@ -1,0 +1,86 @@
+:root {
+  /* Green */
+  --low-green: #235d3a;
+  --middle-green: #397d54;
+  --light-green: #73c088;
+  --white: #fff;
+  /* Black */
+  --light-black: #383838;
+  --middle-black: #232323;
+  --low-black: #191919;
+}
+
+.nav-container {
+  width: 100%;
+  background-color: var(--white);
+  padding: 0 10vw;
+  box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+}
+
+.nav-main {
+  height: 5vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  text-transform: capitalize;
+  font-size: 1.4vw;
+  color: var(--middle-green);
+  text-decoration: none;
+}
+
+.nav-link-main {
+  display: flex;
+  width: 40vw;
+  justify-content: space-between;
+}
+
+.nav-link {
+  list-style: none;
+  font-size: 1.1vw;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--middle-green);
+}
+
+.nav-link:hover {
+  color: var(--middle-black);
+}
+
+/* Check box light dark */
+.nav-color-change {
+  width: 5vw;
+  height: 2.5vw;
+  appearance: none;
+  border-radius: 2.5rem;
+  position: relative;
+  background-color: var(--light-green);
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.nav-color-change::before {
+  content: "";
+  width: 2.3vw;
+  height: 2.3vw;
+  top: 0.1vw;
+  left: 0.1vw;
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--low-green);
+  transition: 0.25s ease;
+}
+
+.nav-color-change:checked {
+  background: var(--light-black);
+  transition: 0.25s ease;
+}
+
+.nav-color-change:checked:before {
+  background-color: var(--light-green);
+  left: 2.6vw;
+  transition: 0.25s ease;
+}

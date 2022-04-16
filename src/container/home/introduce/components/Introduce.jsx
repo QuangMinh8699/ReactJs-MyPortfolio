@@ -8,9 +8,9 @@ const Introduce = () => {
         {/* introduce resume */}
         <div
           className="introduce-resume"
-          data-aos={"fade-right"}
-          data-aos-duration={"1000"}
-          data-aos-once={"true"}
+          // data-aos={"fade-right"}
+          // data-aos-duration={"1000"}
+          // data-aos-once={"true"}
         >
           <div className="introduce-resume-header">
             <p>Hello, I'm</p>
@@ -36,9 +36,9 @@ const Introduce = () => {
         {/* introduce code */}
         <div
           className="introduce-code"
-          data-aos={"fade-left"}
-          data-aos-duration={"1000"}
-          data-aos-once={"true"}
+          // data-aos={"fade-left"}
+          // data-aos-duration={"1000"}
+          // data-aos-once={"true"}
         ></div>
       </div>
     </div>
